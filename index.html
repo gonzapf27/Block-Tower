@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apila Bloques - Juego</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(to bottom, #3a3a3a, #1a1a1a);
+        color: white;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      canvas {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+        border-radius: 8px;
+        background-color: #111;
+      }
+
+      .game-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .score-container {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .title {
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .instructions {
+        margin-top: 15px;
+        font-size: 18px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="title">Apila Bloques</h1>
+    <div class="game-container">
+      <canvas id="myCanvas" width="500" height="500"> </canvas>
+      <div class="score-container">Puntos: <span id="score">0</span></div>
+    </div>
+    <div class="instructions">Presiona ESPACIO/Click para soltar el bloque</div>
+    <script src="game.js"></script>
+  </body>
+</html>
