@@ -1,8 +1,14 @@
 # 🎮 Block tower
 
+![GitHub stars](https://img.shields.io/github/stars/gonzapf27/Block-Tower?style=social)
+![GitHub forks](https://img.shields.io/github/forks/gonzapf27/Block-Tower?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/gonzapf27/Block-Tower?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/gonzapf27/Block-Tower)
+![GitHub issues](https://img.shields.io/github/issues/gonzapf27/Block-Tower)
+
 Un juego adictivo y minimalista construido con JavaScript vanilla, donde el objetivo es apilar bloques con precisión para alcanzar la mayor puntuación posible.
 
-![1743775237890](image/README/1743775237890.png)
+![1743776104937](image/README/1743776104937.png)
 
 ## 🎯 Características
 
@@ -66,6 +72,12 @@ Las contribuciones son bienvenidas. Para cambios importantes, por favor abre pri
         <img src="https://img.shields.io/badge/GitHub-gonzapf27-181717?style=flat-square&logo=github" alt="GitHub">
     </a>
 </div>
+
+## ⭐ ¿Te gusta este proyecto?
+
+¡Dale una estrella al repositorio para apoyar el proyecto!
+
+[![GitHub stars](https://img.shields.io/github/stars/gonzapf27/Block-Tower?style=social)](https://github.com/gonzapf27/Block-Tower/stargazers)
 
 ---
 
