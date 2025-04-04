@@ -73,12 +73,6 @@ Las contribuciones son bienvenidas. Para cambios importantes, por favor abre pri
     </a>
 </div>
 
-## ⭐ ¿Te gusta este proyecto?
-
-¡Dale una estrella al repositorio para apoyar el proyecto!
-
-[![GitHub stars](https://img.shields.io/github/stars/gonzapf27/Block-Tower?style=social)](https://github.com/gonzapf27/Block-Tower/stargazers)
-
 ---
 
-⭐️ ¡Si te gusta este proyecto, no dudes en darle una estrella en GitHub! ⭐️
+⭐️ ¡Si te gusta este proyecto, no dudes en darle una estrella en GitHub! ⭐️ [![GitHub stars](https://img.shields.io/github/stars/gonzapf27/Block-Tower?style=social)](https://github.com/gonzapf27/Block-Tower/stargazers)
