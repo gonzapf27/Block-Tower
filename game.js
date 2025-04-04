@@ -31,12 +31,22 @@ let blocks = [],
   particles = [];
 
 // Funciones del juego
+function resizeCanvas() {
+  const container = document.querySelector('.game-container');
+  const containerWidth = container.clientWidth;
+  const scale = Math.min(1, containerWidth / 500);
+  
+  canvas.style.width = `${500 * scale}px`;
+  canvas.style.height = `${500 * scale}px`;
+}
+
 function initializeDOMElements() {
   canvas = document.getElementById("myCanvas");
   if (canvas) {
     ctx = canvas.getContext("2d");
     canvasWidth = canvas.width;
     canvasHeight = canvas.height;
+    resizeCanvas();
   }
   scoreElement = document.getElementById("score");
 }
@@ -245,16 +255,16 @@ if (typeof window !== "undefined") {
     initGame();
     drawFrame();
 
-    
     function handleAction() {
       if (state === STATES.BOUNCING) dropPiece();
       else if (state === STATES.GAMEOVER) resetGame();
     }
     
     canvas.addEventListener("click", handleAction);
-    
     window.addEventListener("keydown", (event) => {
       if (event.key === " ") handleAction();
     });
+
+    window.addEventListener("resize", resizeCanvas);
   });
 }
