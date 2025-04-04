@@ -1,4 +1,4 @@
-# 🎮 Apila Bloques | Stack Blocks Game
+# 🎮 Block tower
 
 Un juego adictivo y minimalista construido con JavaScript vanilla, donde el objetivo es apilar bloques con precisión para alcanzar la mayor puntuación posible.
 
@@ -32,7 +32,7 @@ Un juego adictivo y minimalista construido con JavaScript vanilla, donde el obje
 1. Clona este repositorio:
 
 ```bash
-git clone https://github.com/gonzapf27/blocks_js.git
+git clone https://github.com/gonzapf27/blockTower.git
 ```
 
 2. Abre el archivo `index.html` en tu navegador web preferido

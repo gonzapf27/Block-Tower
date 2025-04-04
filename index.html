@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apila Bloques - Juego</title>
+    <title>Block Tower - Juego</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
       body {
         font-family: "Arial", sans-serif;
@@ -16,12 +17,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        min-height: 100vh;
+        overflow-x: hidden;
       }
 
       canvas {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
         border-radius: 8px;
         background-color: #111;
+        max-width: 100%;
+        height: auto;
       }
 
       .game-container {
@@ -29,6 +34,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 10px;
       }
 
       .score-container {
@@ -41,26 +50,78 @@
       }
 
       .title {
-        font-size: 36px;
+        font-size: clamp(24px, 5vw, 36px);
         margin-bottom: 20px;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
 
       .instructions {
-        margin-top: 15px;
-        font-size: 18px;
+        margin: 15px auto 100px;
+        font-size: clamp(14px, 4vw, 18px);
         text-align: center;
+        padding: 0 10px;
+      }
+
+      .footer {
+        position: fixed;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 12px;
+        font-size: 16px;
+        color: #ffffff80;
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(5px);
+        z-index: 100;
+      }
+
+      .footer a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        padding: 8px 15px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        margin: 0 5px;
+      }
+
+      .footer a:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+      }
+
+      .footer i {
+        margin-right: 5px;
+      }
+
+      @media (max-width: 600px) {
+        canvas {
+          width: 100%;
+          height: auto;
+        }
+        
+        .score-container {
+          font-size: 20px;
+          top: 10px;
+          right: 10px;
+        }
       }
     </style>
   </head>
 
   <body>
-    <h1 class="title">Apila Bloques</h1>
+    <h1 class="title">Block Tower</h1>
     <div class="game-container">
       <canvas id="myCanvas" width="500" height="500"> </canvas>
       <div class="score-container">Puntos: <span id="score">0</span></div>
     </div>
     <div class="instructions">Presiona ESPACIO/Click para soltar el bloque</div>
+    <div class="footer">
+      <a href="https://github.com/gonzapf27" target="_blank">
+        <i class="fab fa-github"></i> @gonzapf27
+      </a>
+    </div>
     <script src="game.js"></script>
   </body>
 </html>
