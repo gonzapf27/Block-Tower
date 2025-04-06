@@ -32,10 +32,10 @@ let blocks = [],
 
 // Funciones del juego
 function resizeCanvas() {
-  const container = document.querySelector('.game-container');
+  const container = document.querySelector(".game-container");
   const containerWidth = container.clientWidth;
   const scale = Math.min(1, containerWidth / 500);
-  
+
   canvas.style.width = `${500 * scale}px`;
   canvas.style.height = `${500 * scale}px`;
 }
@@ -259,7 +259,7 @@ if (typeof window !== "undefined") {
       if (state === STATES.BOUNCING) dropPiece();
       else if (state === STATES.GAMEOVER) resetGame();
     }
-    
+
     canvas.addEventListener("click", handleAction);
     window.addEventListener("keydown", (event) => {
       if (event.key === " ") handleAction();
